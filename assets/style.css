@@ -388,6 +388,8 @@ a.card:hover, .card.hoverable:hover {
 .project-points li { margin-bottom: 0.35rem; }
 .project-points li::marker { color: var(--accent); }
 
+.project-points strong { color: var(--text); font-weight: 600; }
+
 .project-points code {
   padding: 0.1em 0.4em;
   border-radius: 5px;
