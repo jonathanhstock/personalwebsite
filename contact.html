@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Contact — Jonathan Stock</title>
+  <meta name="description" content="Get in touch with Jonathan Stock about roles, projects, or collaboration.">
+  <meta name="theme-color" content="#0a0c10">
+  <meta property="og:title" content="Contact — Jonathan Stock">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%237c8cff'/%3E%3Cstop offset='1' stop-color='%234cc9f0'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='8' fill='url(%23g)'/%3E%3Ctext x='16' y='21.5' font-family='Arial' font-weight='800' font-size='14' text-anchor='middle' fill='%230a0c10'%3EJS%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="assets/style.css">
+  <script>document.documentElement.classList.remove("no-js");</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="Jonathan Stock, home">
+        <span class="brand-mark" aria-hidden="true">JS</span>
+        <span>Jonathan Stock</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+        <span class="bars"></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">Contact</span>
+        <h1>Let’s <span class="gradient-text">talk</span>.</h1>
+        <p class="lead">Whether it’s a role, a project, or just a hello, send me a message and I’ll get back to you.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-layout">
+
+        <form class="form" id="contact-form" novalidate>
+          <div class="form-row">
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" autocomplete="name" placeholder="Your name" required>
+              <span class="error" role="alert"></span>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" inputmode="email" placeholder="you@example.com" required>
+              <span class="error" role="alert"></span>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="subject">Subject <span class="optional">(optional)</span></label>
+            <input id="subject" name="subject" type="text" placeholder="What’s this about?">
+            <span class="error" role="alert"></span>
+          </div>
+
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell me a little about what you have in mind…" required></textarea>
+            <span class="error" role="alert"></span>
+          </div>
+
+          <!-- Honeypot: leave empty -->
+          <div class="hp" aria-hidden="true">
+            <label>Website <input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+          </div>
+
+          <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
+
+          <button class="btn btn-primary" type="submit">Send message</button>
+        </form>
+
+        <aside aria-label="Other ways to reach me">
+          <ul class="contact-list">
+            <li>
+              <a href="https://www.linkedin.com/in/jonathanhstock/" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                <span>LinkedIn<span class="sub">Connect professionally</span></span>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/jonathanhstock" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                <span>GitHub<span class="sub">Browse my code</span></span>
+              </a>
+            </li>
+          </ul>
+        </aside>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© <span data-year>2026</span> Jonathan Stock</span>
+      <ul class="footer-links">
+        <li><a href="https://github.com/jonathanhstock" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/jonathanhstock/" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
