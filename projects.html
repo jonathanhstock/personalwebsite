@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Projects — Jonathan Stock</title>
+  <meta name="description" content="Selected projects by Jonathan Stock: a workout logbook PWA, a beehive monitoring web app, and a C web proxy.">
+  <meta name="theme-color" content="#0a0c10">
+  <meta property="og:title" content="Projects — Jonathan Stock">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%237c8cff'/%3E%3Cstop offset='1' stop-color='%234cc9f0'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='8' fill='url(%23g)'/%3E%3Ctext x='16' y='21.5' font-family='Arial' font-weight='800' font-size='14' text-anchor='middle' fill='%230a0c10'%3EJS%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="assets/style.css">
+  <script>document.documentElement.classList.remove("no-js");</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="Jonathan Stock, home">
+        <span class="brand-mark" aria-hidden="true">JS</span>
+        <span>Jonathan Stock</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+        <span class="bars"></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html" aria-current="page">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">Projects</span>
+        <h1>Things I’ve <span class="gradient-text">built</span>.</h1>
+        <p class="lead">A selection of my more substantial work across web, machine learning, and systems programming. Every card links to the source on GitHub.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="grid grid-2 projects-grid">
+
+          <!-- 1. Workout Logbook -->
+          <article class="card project-card reveal" id="workout-logbook">
+            <div class="project-top">
+              <span class="project-tag">Full-stack · PWA</span>
+              <div class="project-links">
+                <a class="icon-link" href="https://github.com/jonathanhstock/workoutlogger" target="_blank" rel="noopener" aria-label="Workout Logbook on GitHub">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3>Workout Logbook</h3>
+            <p>An installable, offline-first web app for tracking sets, reps, weights, cardio, rest, and body weight.</p>
+            <ul class="project-points">
+              <li>Built-in 8-day training rotation that adapts to missed days instead of forcing a fixed schedule</li>
+              <li>Auto-starting rest timer with audio and vibration alerts, plus 1RM estimates against past performance</li>
+              <li>Cross-device sync with 30-day backups; optional Fitbit import via the Google Health API</li>
+            </ul>
+            <ul class="chips" aria-label="Technologies">
+              <li class="chip">Node.js</li><li class="chip">Express</li><li class="chip">Vanilla JS</li>
+              <li class="chip">Docker</li><li class="chip">Playwright</li>
+            </ul>
+          </article>
+
+          <!-- 2. Beehive Monitoring -->
+          <article class="card project-card reveal" id="beehive-monitoring">
+            <div class="project-top">
+              <span class="project-tag">Senior design · Full-stack</span>
+              <div class="project-links">
+                <a class="icon-link" href="https://github.com/jonathanhstock/BeehiveMonitoring" target="_blank" rel="noopener" aria-label="Beehive Monitoring on GitHub">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3>Beehive Monitoring</h3>
+            <p>A senior design team project at Santa Clara University: an affordable beehive monitoring system with data logging and abnormal-activity detection. I worked on the web app.</p>
+            <ul class="project-points">
+              <li>Worked on the <strong>dashboard</strong>: pick an apiary and hive device, then view graphs of temperature, humidity and wind speed alongside activity predictions and deviations</li>
+              <li>Worked on the <strong>Manage Apiaries</strong> page for creating, editing and deleting apiaries, devices and members</li>
+              <li>Part of a MERN app with JWT sign-in, role-based access (User / Admin / Creator) and Google Maps and remote.it integrations, fed by the team’s C++ computer-vision and Python ML modules</li>
+            </ul>
+            <ul class="chips" aria-label="Technologies">
+              <li class="chip">React</li><li class="chip">Redux</li><li class="chip">Material-UI</li>
+              <li class="chip">Express</li><li class="chip">MongoDB</li>
+            </ul>
+          </article>
+
+          <!-- 3. Web Proxy -->
+          <article class="card project-card reveal" id="web-proxy">
+            <div class="project-top">
+              <span class="project-tag">Systems · C</span>
+              <div class="project-links">
+                <a class="icon-link" href="https://github.com/jonathanhstock/Web-Infrastructure" target="_blank" rel="noopener" aria-label="Web Proxy on GitHub">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3>Web Proxy &amp; Cached Proxy</h3>
+            <p>A web proxy and a cached variant, written in C for a Web Infrastructure course.</p>
+            <ul class="project-points">
+              <li>Basic proxy implementation (<code>proxy.c</code>) and a caching version (<code>cachedproxy.c</code>)</li>
+              <li>Companion utility for downloading websites (<code>downloadwebsite.c</code>)</li>
+              <li>Hands-on network programming in C: sockets, HTTP, and request caching</li>
+            </ul>
+            <ul class="chips" aria-label="Technologies">
+              <li class="chip">C</li><li class="chip">Sockets</li><li class="chip">HTTP</li>
+              <li class="chip">Caching</li>
+            </ul>
+          </article>
+
+        </div>
+
+        <p style="margin:2rem 0 0;color:var(--muted)">
+          More on <a href="https://github.com/jonathanhstock" target="_blank" rel="noopener">GitHub →</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© <span data-year>2026</span> Jonathan Stock</span>
+      <ul class="footer-links">
+        <li><a href="https://github.com/jonathanhstock" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/jonathanhstock/" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
