@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Projects — Jonathan Stock</title>
-  <meta name="description" content="Selected projects by Jonathan Stock: a workout logbook PWA, a predictive battery-maintenance model, a meeting scheduler, and a C web proxy.">
+  <meta name="description" content="Selected projects by Jonathan Stock: a workout logbook PWA, a beehive monitoring system with computer vision and ML, and a C web proxy.">
   <meta name="theme-color" content="#0a0c10">
   <meta property="og:title" content="Projects — Jonathan Stock">
   <meta property="og:type" content="website">
@@ -47,7 +47,7 @@
 
     <section class="section">
       <div class="container">
-        <div class="grid grid-2">
+        <div class="grid grid-2 projects-grid">
 
           <!-- 1. Workout Logbook -->
           <article class="card project-card reveal" id="workout-logbook">
@@ -72,57 +72,30 @@
             </ul>
           </article>
 
-          <!-- 2. Predictive Battery Maintenance -->
-          <article class="card project-card reveal" id="battery-maintenance">
+          <!-- 2. Beehive Monitoring -->
+          <article class="card project-card reveal" id="beehive-monitoring">
             <div class="project-top">
-              <span class="project-tag">Machine learning</span>
+              <span class="project-tag">Senior design · Full-stack · CV · ML</span>
               <div class="project-links">
-                <a class="icon-link" href="https://github.com/jonathanhstock/predictivemaintenance" target="_blank" rel="noopener" aria-label="Predictive Battery Maintenance on GitHub">
+                <a class="icon-link" href="https://github.com/jonathanhstock/BeehiveMonitoring" target="_blank" rel="noopener" aria-label="Beehive Monitoring on GitHub">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
                 </a>
               </div>
             </div>
-            <h3>Predictive Battery Maintenance</h3>
-            <p>Forecasts when a laptop battery will fall below 80% health, with an optimistic-to-pessimistic range.</p>
-            <div class="metrics">
-              <div class="metric"><strong>R² 0.85</strong><span>model fit</span></div>
-              <div class="metric"><strong>~216 days</strong><span>mean error vs 333 baseline</span></div>
-            </div>
+            <h3>Beehive Monitoring</h3>
+            <p>A low-cost beehive monitoring system with data logging and abnormal-activity detection, built as a Santa Clara University senior design project.</p>
             <ul class="project-points">
-              <li>Simulates calendar and cycle aging across 3,000 laptops to train three quantile models (P10 / P50 / P90)</li>
-              <li>Reads real battery stats on macOS and serves a web dashboard plus a JSON API</li>
-              <li>Trained on simulated data, so results are estimates pending real-world validation</li>
+              <li>MERN web app for managing apiaries and hives, with JWT sign-in, role-based access (User / Admin / Creator), and charts of temperature, humidity and wind speed</li>
+              <li>Computer vision module (C++) that measures bee activity from a webcam feed</li>
+              <li>Python neural-network module that predicts expected activity so deviations can be flagged; the vision and ML modules run on edge devices</li>
             </ul>
             <ul class="chips" aria-label="Technologies">
-              <li class="chip">Python</li><li class="chip">Flask</li><li class="chip">scikit-learn</li>
-              <li class="chip">Quantile regression</li>
+              <li class="chip">React</li><li class="chip">Express</li><li class="chip">MongoDB</li>
+              <li class="chip">Python</li><li class="chip">C++</li>
             </ul>
           </article>
 
-          <!-- 3. Meeting Scheduler -->
-          <article class="card project-card reveal" id="meeting-scheduler">
-            <div class="project-top">
-              <span class="project-tag">Team project · Web app</span>
-              <div class="project-links">
-                <a class="icon-link" href="https://github.com/jonathanhstock/meeting-scheduler" target="_blank" rel="noopener" aria-label="Meeting Scheduler on GitHub">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-                </a>
-              </div>
-            </div>
-            <h3>Meeting Scheduler</h3>
-            <p>A When2Meet-style app for coordinating schedules with friends, built as a team final project for a software engineering course.</p>
-            <ul class="project-points">
-              <li>User registration and full create / read / update / delete for schedules</li>
-              <li>Schedules can be emailed to participants through the EmailJS API</li>
-              <li>React client with an Express API, covered by Jest and Supertest tests</li>
-            </ul>
-            <ul class="chips" aria-label="Technologies">
-              <li class="chip">React</li><li class="chip">Node.js</li><li class="chip">Express</li>
-              <li class="chip">Jest</li><li class="chip">Supertest</li>
-            </ul>
-          </article>
-
-          <!-- 4. Web Proxy -->
+          <!-- 3. Web Proxy -->
           <article class="card project-card reveal" id="web-proxy">
             <div class="project-top">
               <span class="project-tag">Systems · C</span>
