@@ -19,18 +19,12 @@ npx serve .
 
 Or just open `index.html` in a browser.
 
-## Make the contact form deliver messages
+## Contact form
 
-The site is static, so the form needs a destination. Edit `CONTACT_CONFIG` at the top of `assets/script.js`:
+The site is static, so the form needs a destination. It is set in `CONTACT_CONFIG` at the top of `assets/script.js`:
 
-- `formEndpoint`: a form-backend URL such as a [Formspree](https://formspree.io) endpoint (`https://formspree.io/f/xxxxxxxx`). Submissions arrive in your inbox.
-- `mailto`: an email address. If no endpoint is set, submitting opens the visitor's mail app with the message pre-filled.
-
-Until one is set, the form shows a "not connected yet" notice rather than silently dropping messages.
-
-## Adding your LinkedIn background
-
-The About page is written from your GitHub projects and coursework. To add experience, certifications or a graduation year, look for the `LINKEDIN:` comment in `about.html`.
+- `mailto`: currently `jonathanhstock@gmail.com`. Submitting opens the visitor's mail app with the message pre-filled. The contact page also shows a plain email link as a fallback.
+- `formEndpoint`: optional. Set a form-backend URL such as a [Formspree](https://formspree.io) endpoint (`https://formspree.io/f/xxxxxxxx`) to have messages POSTed and delivered to your inbox without the visitor's mail app. It takes priority over `mailto`.
 
 ## Deploying
 

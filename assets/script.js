@@ -18,7 +18,7 @@
    ----------------------------------------------------------------------- */
 const CONTACT_CONFIG = {
   formEndpoint: "",
-  mailto: "",
+  mailto: "jonathanhstock@gmail.com",
 };
 
 (function () {
